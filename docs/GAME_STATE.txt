@@ -10,6 +10,7 @@ BOARD:
         -Each row is 1 Y-unit, and hexes in the same row are 1 X-unit from each other
             -Each row alternates X-units by 0.5
         -First cell starts at top-left and is always (0,0) with all cell indices being positive
+            -First cell of second row always starts at X=0.5
 
 NEIGHBOUR_DATA:
     -Number of adjacent blue cell neighbours for each grey cell
