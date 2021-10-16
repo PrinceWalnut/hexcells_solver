@@ -1,0 +1,25 @@
+This is a description of the game state to be written to every file.
+
+The critical pieces of information for every turn are given here.
+
+BOARD:
+    -The colour state of all cells at beginning of turn
+        -0 -> white; 1 -> orange; 2 -> grey; 3-> blue;
+    -Represented as 2D array of cell indices with their values being enumerated as above
+
+NEIGHBOUR_DATA:
+    -Number of adjacent blue cell neighbours for each grey cell
+        -Is -1 for any non-grey cell
+        -Some number 0-5 for any grey cell
+    -Represented as 2D array of cell indices with their values being enumerated as above
+
+ROW_COLLECTIONS:
+    -Array of cells that satisfy a rule
+        -Possible rules include an exact number of blue cells and an OPTIONAL:['contiguous', 'non-contiguous']
+            -No optional rules denoted by 0, contiguous denoted by 1, non-contiguous denoted by 2
+    -May have sub-row_collections that apply rules to a subset of these cells
+    -Represented as an array of cell coordinates, number of blue cells, and rules enumerated by above
+
+AREA_COLLECTIONS:
+    -Given by coordinates of a cell, and the number of blue cells in an array spanned by two cells distance from that cell (excluding the cell)
+    -Represented as array of all cell indices in the area (excluding the original cell) and the number of them that are blue

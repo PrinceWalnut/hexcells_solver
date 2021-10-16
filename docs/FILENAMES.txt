@@ -1,0 +1,9 @@
+The convention for all filenames is to be given as follows:
+
+"{PREFIX}_game{GAME_NUMBER}_turn{TURN_NUMBER}.hxy"
+
+where the variables {GAME_NUMBER} and {TURN_NUMBER} are 8-digit integers (leading zeros not stripped), and {PREFIX} is the path to this package's ~/data/ directory.
+
+Solved files per turn iteration will include the following appendix before the '.hxy' extension:
+
+"_soln"
