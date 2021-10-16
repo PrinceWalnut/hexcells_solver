@@ -28,3 +28,6 @@ ROW_COLLECTIONS:
 AREA_COLLECTIONS:
     -Given by coordinates of a cell, and the number of blue cells in an array spanned by two cells distance from that cell (excluding the cell)
     -Represented as array of all cell indices in the area (excluding the original cell) and the number of them that are blue
+
+REMAINING:
+    -Integer of number of remaining blue cells to be discovered
