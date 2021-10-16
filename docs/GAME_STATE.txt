@@ -14,8 +14,8 @@ BOARD:
 
 NEIGHBOUR_DATA:
     -Number of adjacent blue cell neighbours for each grey cell
-        -Is -1 for any non-grey cell
-        -Some number 0-5 for any grey cell
+        -Is -1 for any non-grey cell and '?' grey cells
+        -Some number 0-5 for any informational grey cell
     -Represented as 2D array of cell indices with their values being enumerated as above
 
 ROW_COLLECTIONS:
