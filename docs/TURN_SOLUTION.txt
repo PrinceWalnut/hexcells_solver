@@ -1,0 +1,8 @@
+For all files labeled 'soln' for a turn, the following represents the layout of data for the solution:
+
+BOARD:
+    -Array of all cells indexed the same as outlined in GAME_STATE.txt
+    -Each cell given a value of:
+        -0 -> Unchanged
+        -1 -> Marked blue
+        -2 -> Marked grey
